@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+}
+.block {
+    width: 100%;
+    height: 8px;
+    background-color: green;
+}
+.site-wrapper{
+    margin: 8px;
+}
+
+@media screen and (min-width:600px) {
+    .site-wrapper{
+    margin: 8px;
+    display: flex ;
+    }
+    .sidebar {
+        width: 5%;
+    }
+    .content {
+        flex:1;
+        overflow: auto;
+    }
+}
+
+.content-text-wrapper {
+    padding-left: 8vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
+}

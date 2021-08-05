@@ -1,0 +1,72 @@
+body{
+    margin: 0px;
+}
+.block {
+    width: 100%;
+    height: 8px;
+    background-color: green;
+}
+.site-wrapper{
+    margin: 8px;
+}
+
+@media screen and (min-width:600px) {
+    .site-wrapper{
+    margin: 8px;
+    display: flex ;
+    }
+    .sidebar {
+        width: 30%;
+    order: 2;
+    }
+    .content {
+        flex:1;
+        overflow: auto;
+    }
+}
+
+.content-text-wrapper {
+    padding-left: 8vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
+}
+
+.content-text-wrapper > ul {
+    list-style-type: none;
+}
+
+.content-text-wrapper > ul > li {
+    list-style-type: none;
+    padding: 6px;
+}
+
+.content-text-wrapper > ul > li > a {
+    background: lightgray;
+    width: initial;
+    padding: 5px;
+}
+.content-text-wrapper > ul > li > a:hover {
+    background: gray;
+}
+
+.about-me {
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+    border-left: 1px solid green;
+}
+.aboutme-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max(200px, 15vw);
+    height: max(200px, 15vw);
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url(psyduck.png);
+    background-size: 200px;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+}
